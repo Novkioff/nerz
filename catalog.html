@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link href="css/style_catalog.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/style_catalog.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="wrapper">
-                <div class="logo">
-                    <img src="img/" alt="логотип" width="">
+                <div class="nav_menu clearfix">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="логотип">
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html" title="студия">студия</a></li>
+                            <li><a href="#" title="клиенты">клиенты</a></li>
+                            <li><a href="catalog.html" title="каталог" class="active">магазин</a></li>
+                            <li><a href="#" title="контакты">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="cart">
+                        <p>корзина</p>
+                    </div>
                 </div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#" title="студия">студия</a></li>
-                        <li><a href="#" title="клиенты">клиенты</a></li>
-                        <li><a href="catalog.html" title="каталог" class="active">магазин</a></li>
-                        <li><a href="#" title="контакты">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="cart">
-                    <p>корзина</p>
-                </div>
-                <h1>Магазин готовых шаблонов</h1>
-            </div>
         </header>
         <main>
             <div class="wrapper">
@@ -114,7 +114,17 @@
                         </div>
                     </div>
                 </section>
+            </div>
                 <section class="contacts">
+                    <div class="write_us">
+                        <h2>Напишите нам</h2>
+                        <form name="write" action="#">
+                            <label for="your_name">Ваше имя</label><input type="text" name="your_name" id="your_name" placeholder="Представьтесь, пожалуйста">
+                            <label for="your_mail">Ваш e-mail</label><input type="text" name="your_mail" id="your_mail" placeholder="Для отправки ответа">
+                            <label for="message">Текст письма</label><textarea name="message" id="message" placeholder="Для отправки ответа"></textarea>
+                            <input type="submit" class="send">
+                        </form>
+                    </div>
                     <div class="map">
 
                     </div>

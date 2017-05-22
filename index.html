@@ -10,37 +10,52 @@
     <div class="container">
         <header>
             <div class="wrapper">
-                <div class="logo">
-                    <img src="img/" alt="логотип" width="">
-                </div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#" title="студия">студия</a></li>
-                        <li><a href="#" title="клиенты">клиенты</a></li>
-                        <li><a href="catalog.html" title="каталог">магазин</a></li>
-                        <li><a href="#" title="контакты">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="cart">
-                    <p>корзина</p>
+                <div class="nav_menu clearfix">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="логотип">
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html" title="студия" class="active">студия</a></li>
+                            <li><a href="#" title="клиенты">клиенты</a></li>
+                            <li><a href="catalog.html" title="каталог">магазин</a></li>
+                            <li><a href="#" title="контакты">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="cart">
+                        <p>корзина</p>
+                    </div>
                 </div>
                 <div class="slider">
-                    <div class="post">
+                    <input type="radio" name="slider1" id="slider1_1" checked="checked">
+                    <label for="slider1_1"></label>
+                    <div class="slide">
                        <h1>Долго, дорого, скрупулезно</h1>
                         <p>Математически выверенный дизайн
                             для вашего сайта или мобильного приложения.
                         </p>
                         <a href="#" title="Узнать больше">Узнать больше</a>
-                    </div>
-                    <div class="slids">
-                        <img src="" alt="слайд1" width="">
-                        <img src="" alt="слайд1" width="">
                         <img src="" alt="слайд1" width="">
                     </div>
-                    <div class="controls">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <input type="radio" name="slider1" id="slider1_2">
+                    <label for="slider1_2"></label>
+                    <div class="slide">
+                        <h1>Любим математику как никто другой</h1>
+                        <p>Никакого креатива, только математические формулы
+                            для расчета идеальных пропорций.
+                        </p>
+                        <a href="#" title="Узнать больше">Узнать больше</a>
+                        <img src="" alt="слайд2" width="">
+                    </div>
+                    <input type="radio" name="slider1" id="slider1_3">
+                    <label for="slider1_3"></label>
+                    <div class="slide">
+                        <h1>Только ночь, только хардкор</h1>
+                        <p>Работать днем, как все? Мы против этого.
+                            Ближе к полуночи работа только начинается.
+                        </p>
+                        <a href="#" title="Узнать больше">Узнать больше</a>
+                        <img src="" alt="слайд3" width="">
                     </div>
                 </div>
             </div>
@@ -105,6 +120,15 @@
                 </section>
             </div>
                 <section class="contacts">
+                    <div class="write_us">
+                        <h2>Напишите нам</h2>
+                        <form name="write" action="#">
+                            <label for="your_name">Ваше имя</label><input type="text" name="your_name" id="your_name" placeholder="Представьтесь, пожалуйста">
+                            <label for="your_mail">Ваш e-mail</label><input type="text" name="your_mail" id="your_mail" placeholder="Для отправки ответа">
+                            <label for="message">Текст письма</label><textarea name="message" id="message" placeholder="Для отправки ответа"></textarea>
+                            <input type="submit" class="send">
+                        </form>
+                    </div>
                     <div class="map">
 
                     </div>
