@@ -46,8 +46,18 @@ header {
 
 .logo {
     float: left;
-    height: 65px;
+    background-image: url(../img/logo.png);
+    background-position: -162px 0px;
     width: 160px;
+    height: 65px;
+}
+
+.logo:hover {
+    background-position: 0px -67px;
+}
+
+.logo:active {
+    background-position: 0px 0px;
 }
 
 nav {
@@ -96,19 +106,104 @@ nav ul li a {
     padding-bottom: 10px;
 }
 
-.cart:hover p {
+.cart:hover a {
     color: #fb565a;
 }
 
-.cart:active p {
+.cart:active a {
     color: #bdbdbd;
 }
 
-.cart p {
+.cart a {
     font-weight: 500;
     font-size: 16px;
     color: #000000;
     line-height: 65px;
+}
+
+.slider {
+    position: relative;
+    height: 431px;
+}
+
+.slide img {
+    position: absolute;
+    top: 0;
+    right: 5px;
+
+}
+
+.slider > input {
+    display: none;
+}
+
+.slider > input + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 17px;
+    margin-top: 310px;
+    left: 47%;
+}
+
+.slider > label:hover {
+    background: rgba(250, 250, 250, 0.8);
+}
+
+.slider > input:checked + label {
+    background: rgba(220, 220, 220, 0.8);
+}
+
+.slide {
+    width: 1160px;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.slider > input:checked + label + .slide {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.slide_wrap {
+    width: 520px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.slider .slide h1 {
+    color: #000;
+    font-size: 55px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.slider .slide p {
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 45px;
+}
+
+.slider .slide a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 50px;
+    background-color: #fb565a;
+    border-radius: 2px;
 }
 
 
