@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 .container {
     width: 100%;
     /*padding: 50px 140px;*/
@@ -206,7 +210,183 @@ nav ul li a {
     border-radius: 2px;
 }
 
+.advantages {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #eeeeee;
+}
 
+.adv {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.adv:last-child {
+    margin: 0;
+}
+
+.adv img {
+    padding-bottom: 25px;
+}
+
+.adv h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.adv p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #797c7f;
+    padding-bottom: 40px;
+}
+
+.adv .btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
+
+.adv .btn--red {
+    background-color: #fb565a;
+}
+
+.adv .btn--red:hover {
+    background-color: #e74246;
+}
+
+.adv .btn--red:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px #c13135;
+    color: #e38384;
+}
+
+.adv .btn--green {
+    background-color: #00ca74;
+}
+
+.adv .btn--green:hover {
+    background-color: #00bc6c;
+}
+
+.adv .btn--green:active {
+    background-color: #00aa62x;
+    box-shadow: inset 0 3px #009958;
+    color: #6fc498;
+}
+
+.adv .btn--yellow {
+    background-color: #efc84a;
+}
+
+.adv .btn--yellow:hover {
+    background-color: #eab534;
+}
+
+.adv .btn--yellow:active {
+    background-color: #eab534;
+    box-shadow: inset 0 3px #ce961f;
+    color: #edc47f;
+}
+
+.studio {
+    padding-bottom: 80px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.studio_post {
+    width: 651px;
+    float: left;
+    padding-top: 67px;
+}
+
+.studio_post h2 {
+    font-weight: 500;
+    font-size: 45px;
+    color: black;
+    padding-bottom: 25px;
+}
+
+.studio_post p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #283136;
+    padding-bottom: 50px;
+}
+
+
+.studio_post h3 {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+}
+
+.studio_post ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #283136;
+    padding-bottom: 25px;
+}
+
+.studio_post ul li:last-child {
+    padding: 0;
+}
+
+.studio_post ul li:before {
+    content: "";
+    background-image: url("../img/dash.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    padding-right: 36px;
+}
+
+.studio_about {
+    float: right;
+    padding-top: 41px;
+}
+
+.studio_about img {
+    padding-bottom: 40px;
+}
+
+.studio_about h3 {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.procent {
+    width: 95px;
+    margin-right: 27px;
+    display: inline-block;
+}
+
+.procent:last-child {
+    padding: 0;
+}
+
+.procent h4 {
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+.procent p {
+    font-weight: 400;
+    font-size: 16px;
+}
 
 
 
