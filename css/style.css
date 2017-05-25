@@ -51,17 +51,17 @@ header {
 .logo {
     float: left;
     background-image: url(../img/logo.png);
-    background-position: -162px 0px;
+    background-position: -162px 0;
     width: 160px;
     height: 65px;
 }
 
 .logo:hover {
-    background-position: 0px -67px;
+    background-position: 0 -67px;
 }
 
 .logo:active {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 nav {
@@ -278,7 +278,7 @@ nav ul li a {
 }
 
 .adv .btn--green:active {
-    background-color: #00aa62x;
+    background-color: #00aa62;
     box-shadow: inset 0 3px #009958;
     color: #6fc498;
 }
@@ -299,7 +299,6 @@ nav ul li a {
 
 .studio {
     padding-bottom: 80px;
-    border-bottom: 2px solid #eeeeee;
 }
 
 .studio_post {
@@ -354,6 +353,7 @@ nav ul li a {
 .studio_about {
     float: right;
     padding-top: 41px;
+    padding-bottom: 77px;
 }
 
 .studio_about img {
@@ -386,6 +386,113 @@ nav ul li a {
 .procent p {
     font-weight: 400;
     font-size: 16px;
+}
+
+.studio_logotypes {
+    padding: 45px 0;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+
+}
+
+.logotypes {
+    display: inline-block;
+    margin-right: 55px;
+    margin-left: 55px;
+    float: left;
+    cursor: pointer;
+}
+
+.logotypes:first-child {
+    margin-left: 0;
+}
+
+.logotypes:last-child {
+    margin-right: 0;
+}
+
+.logotypes--acad {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -199px -450px;
+    width: 199px;
+    height: 68px;
+}
+
+.logotypes--acad:hover {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -292px -62px;
+    width: 199px;
+    height: 68px;
+}
+
+.logotypes--acad:active {
+    background-image: url(../img/sprite_logos.png);
+    background-position: 0 -450px;
+    width: 199px;
+    height: 68px;
+}
+
+.logotypes--borod {
+    background-image: url(../img/sprite_logos.png);
+    background-position: 0 -360px;
+    width: 209px;
+    height: 90px;
+}
+
+.logotypes--borod:hover {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -29px -226px;
+    width: 209px;
+    height: 90px;
+}
+
+.logotypes--borod:active {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -209px -360px;
+    width: 209px;
+    height: 90px;
+}
+
+.logotypes--pink {
+    background-image: url(../img/sprite_logos.png);
+    background-position: 0 -518px;
+    width: 185px;
+    height: 52px;
+}
+
+.logotypes--pink:hover {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -37px -65px;
+    width: 185px;
+    height: 52px;
+}
+
+.logotypes--pink:active {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -398px -450px;
+    width: 185px;
+    height: 52px;
+}
+
+.logotypes--mishka {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -520px 0;
+    width: 173px;
+    height: 84px;
+}
+
+.logotypes--mishka:hover {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -303px -232px;
+    width: 173px;
+    height: 84px;
+}
+
+.logotypes--mishka:active {
+    background-image: url(../img/sprite_logos.png);
+    background-position: -520px -84px;
+    width: 173px;
+    height: 84px;
 }
 
 
