@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>nerds главная</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
@@ -11,7 +12,9 @@
         <header>
             <div class="wrapper">
                 <div class="nav_menu clearfix">
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <a href="#" title="Главная"><img src="img/logo.png" alt="Логотип" width="167"></a>
+                    </div>
                     <nav>
                         <ul class="menu">
                             <li><a href="index.html" title="студия" class="active">студия</a></li>
@@ -115,43 +118,59 @@
                             <p>Минимальная предоплата</p>
                         </div>
                     </div>
-                    <div style="clear: both"></div>
+                    <div class="clearfix"></div>
                     <div class="studio_logotypes clearfix">
-                        <div class="logotypes logotypes--acad"></div>
-                        <div class="logotypes logotypes--borod"></div>
-                        <div class="logotypes logotypes--pink"></div>
-                        <div class="logotypes logotypes--mishka"></div>
+                        <div class="studio_logotypes_wrap">
+                            <a href="#" class="logotypes logotypes--acad"></a>
+                            <a href="#" class="logotypes logotypes--borod"></a>
+                            <a href="#" class="logotypes logotypes--pink"></a>
+                            <a href="#" class="logotypes logotypes--mishka"></a>
+                        </div>
                     </div>
                 </section>
             </div>
                 <section class="contacts">
-                    <div class="write_us">
+                    <div class="write_us clearfix" id="write">
                         <h2>Напишите нам</h2>
+                        <span></span>
+                        <div class="clearfix"></div>
                         <form name="write" action="#">
-                            <label for="your_name">Ваше имя</label><input type="text" name="your_name" id="your_name" placeholder="Представьтесь, пожалуйста">
-                            <label for="your_mail">Ваш e-mail</label><input type="text" name="your_mail" id="your_mail" placeholder="Для отправки ответа">
-                            <label for="message">Текст письма</label><textarea name="message" id="message" placeholder="Для отправки ответа"></textarea>
+                            <div class="form-groupe form-groupe--name">
+                                <label for="your_name">Ваше имя</label><br>
+                                <input type="text" name="your_name" id="your_name" placeholder="Представьтесь, пожалуйста">
+                            </div>
+                            <div class="form-groupe form-groupe--mail">
+                                <label for="your_mail">Ваш e-mail</label><br>
+                                <input type="text" name="your_mail" id="your_mail" placeholder="Для отправки ответа">
+                            </div>
+                            <div class="form-groupe form-groupe--message">
+                                <label for="message">Текст письма</label><br>
+                                <input type="text" name="message" id="message" placeholder="Для отправки ответа" maxlength="200">
+                             </div>
                             <input type="submit" class="send">
                         </form>
                     </div>
                     <div class="map">
-
-                    </div>
-                    <div class="coords">
-                        <h2>NЁRDS DESIGN STUDIO</h2>
-                        <address>191186, Санкт-Петербург,
-                            ул. Б. Конюшенная, д. 19/8
-                        </address>
-                        <address>тел. +7 (812) 275-75-75</address>
-                        <a href="#" title="Напишите нам" class="write">напишите нам</a>
+                        <div class="wrapper">
+                            <div class="coords">
+                                <h2>NЁRDS DESIGN STUDIO</h2>
+                                <address>191186, Санкт-Петербург,
+                                    ул. Б. Конюшенная, д. 19/8
+                                </address>
+                                <address class="tel">тел. +7 (812) 275-75-75</address>
+                                <button type="button" class="write">напишите нам</button>
+                            </div>
+                        </div>
                     </div>
                 </section>
         </main>
         <footer>
-            <div class="wrapper">
-                <div class="social">
-                    <img src="" alt="социальные сети">
-                </div>
+            <div class="wrapper clearfix">
+                <ul class="social">
+                    <li class="soc"><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li class="soc"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="soc"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
                 <div class="footer_post">
                     <h2>Давайте дружить, это выгодно!</h2>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
