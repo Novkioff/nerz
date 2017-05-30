@@ -533,7 +533,8 @@ nav ul li a {
 }
 
 .map {
-    min-height: 416px;
+    width: 100%;
+    min-height: 400px;
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
     background-position: center;

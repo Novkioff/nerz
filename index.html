@@ -8,6 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
+<script>
+function initMap() {
+var pos = {lat: 59.938636, lng: 30.323022};
+var map = new google.maps.Map(document.getElementById('map'), {
+zoom: 17,
+center: pos
+});
+var marker = new google.maps.Marker({
+position: pos,
+map: map
+});
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy1Zc9BDpo&callback=initMap">
+</script>
     <div class="container">
         <header>
             <div class="wrapper">
@@ -150,7 +166,7 @@
                             <input type="submit" class="send">
                         </form>
                     </div>
-                    <div class="map">
+                    <div class="map" id="map">
                         <div class="wrapper">
                             <div class="coords">
                                 <h2>NЁRDS DESIGN STUDIO</h2>
