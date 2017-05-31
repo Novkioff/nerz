@@ -2,34 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>nerds главная</title>
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    </script>
+    <![endif]-->
 </head>
 <body>
-<script>
-function initMap() {
-var pos = {lat: 59.938636, lng: 30.323022};
-var map = new google.maps.Map(document.getElementById('map'), {
-zoom: 17,
-center: pos
-});
-var marker = new google.maps.Marker({
-position: pos,
-map: map
-});
-}
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy1Zc9BDpo&callback=initMap">
-</script>
     <div class="container">
         <header>
             <div class="wrapper">
                 <div class="nav_menu clearfix">
                     <div class="logo">
-                        <a href="#" title="Главная"><img src="img/logo.png" alt="Логотип" width="167"></a>
+                        <a href="#" title="Главная"><img src="img/logo.png" alt="Логотип" width="100%" height="65px"></a>
                     </div>
                     <nav>
                         <ul class="menu">
@@ -119,7 +109,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy
                         </ul>
                     </div>
                     <div class="studio_about">
-                        <img src="img/nerds_about.jpg" alt="логотип" width="360">
+                        <img src="img/nerds_about.jpg" alt="логотип" width="100%">
                         <h3>с 2004 года любим точность во всем</h3>
                         <div class="procent">
                             <h4>146<sup>%</sup></h4>
@@ -136,7 +126,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy
                     </div>
                     <div class="clearfix"></div>
                     <div class="studio_logotypes clearfix">
-                        <div class="studio_logotypes_wrap">
+                        <div class="studio_logotypes_wrap clearfix">
                             <a href="#" class="logotypes logotypes--acad"></a>
                             <a href="#" class="logotypes logotypes--borod"></a>
                             <a href="#" class="logotypes logotypes--pink"></a>
@@ -146,9 +136,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy
                 </section>
             </div>
                 <section class="contacts">
-                    <div class="write_us clearfix" id="write">
+                    <div class="write_us clearfix" id="write"> <!--скрытый блок начало-->
                         <h2>Напишите нам</h2>
-                        <span></span>
+                        <span onclick="show(2)"></span>
                         <div class="clearfix"></div>
                         <form name="write" action="#">
                             <div class="form-groupe form-groupe--name">
@@ -165,18 +155,16 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy
                              </div>
                             <input type="submit" class="send">
                         </form>
+                    </div> <!--скрытый блок конец-->
+                    <div class="coords">
+                        <h2>NЁRDS DESIGN STUDIO</h2>
+                        <address>191186, Санкт-Петербург,
+                            ул. Б. Конюшенная, д. 19/8
+                        </address>
+                        <address class="tel">тел. +7 (812) 275-75-75</address>
+                        <button type="button" class="write" onclick="show(1)">напишите нам</button>
                     </div>
                     <div class="map" id="map">
-                        <div class="wrapper">
-                            <div class="coords">
-                                <h2>NЁRDS DESIGN STUDIO</h2>
-                                <address>191186, Санкт-Петербург,
-                                    ул. Б. Конюшенная, д. 19/8
-                                </address>
-                                <address class="tel">тел. +7 (812) 275-75-75</address>
-                                <button type="button" class="write">напишите нам</button>
-                            </div>
-                        </div>
                     </div>
                 </section>
         </main>
@@ -194,5 +182,25 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy
             </div>
         </footer>
     </div>
+    <script>
+        function initMap() {
+            var pos = {lat: 59.938636, lng: 30.323022};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: pos
+            });
+            var marker = new google.maps.Marker({
+                position: pos,
+                map: map,
+                icon: {
+                    url: "img/marker.png",
+                    scaledSize: new google.maps.Size(155, 190)
+                }
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy1Zc9BDpo&callback=initMap">
+    </script>
 </body>
 </html>
