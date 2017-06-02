@@ -166,7 +166,7 @@ nav ul li a {
 }
 
 .slide {
-    width: 1160px;;
+    width: 1160px;
     position: absolute;
     top: 0;
     left: 0;
@@ -666,6 +666,10 @@ footer {
     box-shadow: 0 0 40px rgba(0,1,1,.75);
     display: none;
     z-index: 10;
+}
+
+.open_modal {
+    display: block;
 }
 
 .write_us h2 {
