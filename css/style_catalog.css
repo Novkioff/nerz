@@ -1,0 +1,31 @@
+header h2 {
+    color: #000;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 95px;
+}
+
+.nav_menu {
+    padding-bottom: 70px;
+}
+
+.prtfolio, .filter {
+    float: left;
+}
+
+.filter {
+    width: 260px;
+
+}
+
+form h3 {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.form-groupe input {
+    display: none;
+}
+

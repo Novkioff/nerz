@@ -2,7 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Каталог</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>nerds каталог</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="css/style_catalog.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
@@ -13,7 +16,7 @@
             <div class="wrapper">
                 <div class="nav_menu clearfix">
                     <div class="logo">
-                        <img src="img/logo.png" alt="логотип">
+                        <a href="#" title="Главная"><img src="img/logo.png" alt="Логотип"></a>
                     </div>
                     <nav>
                         <ul class="menu">
@@ -24,27 +27,53 @@
                         </ul>
                     </nav>
                     <div class="cart">
-                        <p>корзина</p>
+                        <a href="#">корзина</a>
                     </div>
                 </div>
+                <h2>Магазин готовых шаблонов</h2>
+            </div>
         </header>
         <main>
-            <div class="wrapper">
+            <div class="wrapper clearfix">
                 <aside class="filter">
                     <div class="cost">
 
                     </div>
                     <form name="filt" action="#">
                         <h3>сетка</h3>
-                        <input type="radio" name="adapt" id="adapt"><label for="adapt">Адаптивная</label>
-                        <input type="radio" name="fix" id="fix"><label for="fix">Фиксированная</label>
-                        <input type="radio" name="rub" id="rub"><label for="rub">Фиксированная</label>
+                        <div class="form-groupe">
+                            <input type="radio" name="grid" id="adapt">
+                            <label for="adapt">Адаптивная</label>
+                        </div>
+                        <div class="form-groupe">
+                            <input type="radio" name="grid" id="fix">
+                            <label for="fix">Фиксированная</label>
+                        </div>
+                        <div class="form-groupe">
+                            <input type="radio" name="grid" id="rub">
+                            <label for="rub">Фиксированная</label>
+                        </div>
                         <h3>особенности</h3>
-                        <input type="checkbox" name="slide" id="slide"><label for="slide">Слайдер</label>
-                        <input type="checkbox" name="advan" id="advan"><label for="advan">Слайдер</label>
-                        <input type="checkbox" name="news" id="news"><label for="news">Слайдер</label>
-                        <input type="checkbox" name="galery" id="galery"><label for="galery">Слайдер</label>
-                        <input type="checkbox" name="basket" id="basket"><label for="basket">Слайдер</label>
+                        <div class="form-groupe">
+                            <input type="checkbox" name="slide" id="slide">
+                            <label for="slide">Слайдер</label>
+                        </div>
+                        <div class="form-groupe">
+                            <input type="checkbox" name="advan" id="advan">
+                            <label for="advan">Слайдер</label>
+                        </div>
+                        <div class="form-groupe">
+                            <input type="checkbox" name="news" id="news">
+                            <label for="news">Слайдер</label>
+                        </div>
+                        <div class="form-groupe">
+                            <input type="checkbox" name="galery" id="galery">
+                            <label for="galery">Слайдер</label>
+                        </div>
+                        <div class="form-groupe">
+                            <input type="checkbox" name="basket" id="basket">
+                            <label for="basket">Слайдер</label>
+                        </div>
                         <input type="submit" value="Отправить">
                     </form>
                 </aside>
@@ -115,34 +144,46 @@
                     </div>
                 </section>
             </div>
-                <section class="contacts">
-                    <div class="write_us">
-                        <h2>Напишите нам</h2>
-                        <form name="write" action="#">
-                            <label for="your_name">Ваше имя</label><input type="text" name="your_name" id="your_name" placeholder="Представьтесь, пожалуйста">
-                            <label for="your_mail">Ваш e-mail</label><input type="text" name="your_mail" id="your_mail" placeholder="Для отправки ответа">
-                            <label for="message">Текст письма</label><textarea name="message" id="message" placeholder="Для отправки ответа"></textarea>
-                            <input type="submit" class="send">
-                        </form>
-                    </div>
-                    <div class="map">
-
-                    </div>
-                    <div class="coords">
-                        <h2>NЁRDS DESIGN STUDIO</h2>
-                        <address>191186, Санкт-Петербург,
-                            ул. Б. Конюшенная, д. 19/8
-                        </address>
-                        <address>тел. +7 (812) 275-75-75</address>
-                        <a href="#" title="Напишите нам" class="write">напишите нам</a>
-                    </div>
-                </section>
+            <section class="contacts">
+                <div class="write_us clearfix"> <!--скрытый блок начало-->
+                    <h2>Напишите нам</h2>
+                    <span class="close"></span>
+                    <div class="clearfix"></div>
+                    <form name="write" action="#">
+                        <div class="form-groupe form-groupe--name">
+                            <label for="your_name">Ваше имя</label><br>
+                            <input type="text" name="your_name" id="your_name" placeholder="Представьтесь, пожалуйста">
+                        </div>
+                        <div class="form-groupe form-groupe--mail">
+                            <label for="your_mail">Ваш e-mail</label><br>
+                            <input type="text" name="your_mail" id="your_mail" placeholder="Для отправки ответа">
+                        </div>
+                        <div class="form-groupe form-groupe--message">
+                            <label for="message">Текст письма</label><br>
+                            <input type="text" name="message" id="message" placeholder="Для отправки ответа" maxlength="200">
+                        </div>
+                        <input type="submit" class="send">
+                    </form>
+                </div> <!--скрытый блок конец-->
+                <div class="coords">
+                    <h2>NЁRDS DESIGN STUDIO</h2>
+                    <address>191186, Санкт-Петербург,
+                        ул. Б. Конюшенная, д. 19/8
+                    </address>
+                    <address class="tel">тел. +7 (812) 275-75-75</address>
+                    <button type="button" class="write">напишите нам</button>
+                </div>
+                <div class="map" id="map">
+                </div>
+            </section>
         </main>
         <footer>
-            <div class="wrapper">
-                <div class="social">
-                    <img src="" alt="социальные сети">
-                </div>
+            <div class="wrapper clearfix">
+                <ul class="social">
+                    <li class="soc"><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li class="soc"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="soc"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
                 <div class="footer_post">
                     <h2>Давайте дружить, это выгодно!</h2>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -150,5 +191,26 @@
             </div>
         </footer>
     </div>
+    <script>
+        function initMap() {
+            var pos = {lat: 59.938636, lng: 30.323022};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 17,
+                center: pos
+            });
+            var marker = new google.maps.Marker({
+                position: pos,
+                map: map,
+                icon: {
+                    url: "img/marker.png",
+                    scaledSize: new google.maps.Size(155, 190)
+                }
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjh8Xf1AZWncQh0tspwmzf_Dy1Zc9BDpo&callback=initMap">
+    </script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
 </body>
 </html>
