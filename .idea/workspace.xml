@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be83ec4-b78c-4963-a430-94ed267e12b6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/reset.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog.html" afterPath="$PROJECT_DIR$/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style_catalog.css" afterPath="$PROJECT_DIR$/css/style_catalog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="nerds.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +47,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="684" column="4" selection-start-line="684" selection-start-column="4" selection-end-line="685" selection-end-column="19" />
+            <state relative-caret-position="506">
+              <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="268" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -61,8 +57,8 @@
       <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="132" column="60" selection-start-line="132" selection-start-column="60" selection-end-line="132" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -71,8 +67,8 @@
       <file leaf-file-name="style_catalog.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style_catalog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="156" column="13" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
+            <state relative-caret-position="237">
+              <caret line="323" column="0" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -291,12 +287,12 @@
       <workItem from="1496406228560" duration="5566000" />
       <workItem from="1496437192270" duration="3244000" />
       <workItem from="1496513597531" duration="4644000" />
-      <workItem from="1496579316555" duration="6716000" />
+      <workItem from="1496579316555" duration="13763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85099000" />
+    <option name="totallyTimeSpent" value="92146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
@@ -336,14 +332,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11407">
-          <caret line="671" column="19" selection-start-line="671" selection-start-column="19" selection-end-line="671" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -680,26 +668,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog.html">
+    <entry file="file://$PROJECT_DIR$/img/RtJ.inettools.net.spritegenerator_arch/sprite.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="684" column="4" selection-start-line="684" selection-start-column="4" selection-end-line="685" selection-end-column="19" />
+        <state relative-caret-position="506">
+          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="268" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="132" column="60" selection-start-line="132" selection-start-column="60" selection-end-line="132" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style_catalog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="156" column="13" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
+        <state relative-caret-position="237">
+          <caret line="323" column="0" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
           <folding />
         </state>
       </provider>
