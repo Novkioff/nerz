@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>nerds каталог</title>
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="css/style_catalog.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
@@ -37,44 +36,51 @@
             <div class="wrapper clearfix">
                 <aside class="filter">
                     <div class="cost">
+                        <h3>стоимость:</h3>
+                        <div class="cost_change">
 
+                        </div>
                     </div>
                     <form name="filt" action="#">
-                        <h3>сетка</h3>
-                        <div class="form-groupe">
-                            <input type="radio" name="grid" id="adapt">
-                            <label for="adapt">Адаптивная</label>
+                        <div class="grid">
+                            <h3>сетка</h3>
+                            <div class="form-groupe1">
+                                <input type="radio" name="grid" id="adapt" checked>
+                                <label for="adapt">Адаптивная</label>
+                            </div>
+                            <div class="form-groupe1">
+                                <input type="radio" name="grid" id="fix">
+                                <label for="fix">Фиксированная</label>
+                            </div>
+                            <div class="form-groupe1">
+                                <input type="radio" name="grid" id="rub">
+                                <label for="rub">Резиновая</label>
+                            </div>
                         </div>
-                        <div class="form-groupe">
-                            <input type="radio" name="grid" id="fix">
-                            <label for="fix">Фиксированная</label>
+                        <div class="prop">
+                            <h3>особенности</h3>
+                            <div class="form-groupe2">
+                                <input type="checkbox" name="slide" id="slide" checked>
+                                <label for="slide">Слайдер</label>
+                            </div>
+                            <div class="form-groupe2">
+                                <input type="checkbox" name="advan" id="advan">
+                                <label for="advan">Блок преимуществ</label>
+                            </div>
+                            <div class="form-groupe2">
+                                <input type="checkbox" name="news" id="news">
+                                <label for="news">Новости</label>
+                            </div>
+                            <div class="form-groupe2">
+                                <input type="checkbox" name="galery" id="galery">
+                                <label for="galery">Галерея</label>
+                            </div>
+                            <div class="form-groupe2">
+                                <input type="checkbox" name="basket" id="basket">
+                                <label for="basket">Корзина</label>
+                            </div>
                         </div>
-                        <div class="form-groupe">
-                            <input type="radio" name="grid" id="rub">
-                            <label for="rub">Фиксированная</label>
-                        </div>
-                        <h3>особенности</h3>
-                        <div class="form-groupe">
-                            <input type="checkbox" name="slide" id="slide">
-                            <label for="slide">Слайдер</label>
-                        </div>
-                        <div class="form-groupe">
-                            <input type="checkbox" name="advan" id="advan">
-                            <label for="advan">Слайдер</label>
-                        </div>
-                        <div class="form-groupe">
-                            <input type="checkbox" name="news" id="news">
-                            <label for="news">Слайдер</label>
-                        </div>
-                        <div class="form-groupe">
-                            <input type="checkbox" name="galery" id="galery">
-                            <label for="galery">Слайдер</label>
-                        </div>
-                        <div class="form-groupe">
-                            <input type="checkbox" name="basket" id="basket">
-                            <label for="basket">Слайдер</label>
-                        </div>
-                        <input type="submit" value="Отправить">
+                        <input type="submit" value="Показать" class="show">
                     </form>
                 </aside>
                 <section class="prtfolio">

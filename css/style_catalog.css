@@ -16,16 +16,171 @@ header h2 {
 
 .filter {
     width: 260px;
+    padding-bottom: 60px;
+}
 
+.cost h3 {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.cost_change {
+    width: 260px;
+    height: 132px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    margin-bottom: 60px;
+}
+
+.grid {
+padding-bottom: 30px;
 }
 
 form h3 {
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
-.form-groupe input {
+.form-groupe1 input, .form-groupe2 input {
     display: none;
 }
 
+.form-groupe1 {
+    padding-bottom: 20px;
+}
+
+.form-groupe1 label {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-groupe1 label:before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    border: 3px solid #b8b8b8;
+    border-radius: 19px;
+    top: -4px;
+    left: 0;
+    position: absolute;
+}
+
+.form-groupe1 input:checked + label:before {
+    content: "\2022";
+    color: #b8b8b8;
+    text-align: center;
+    font-size: 40px;
+    line-height: 20px;
+}
+
+
+.form-groupe1:hover input:checked + label:before {
+    color: #4d4d4d;
+}
+
+.form-groupe1:hover label:before {
+    border: 3px solid #4d4d4d;
+}
+
+.form-groupe1:active input:checked + label:before {
+    opacity: .3;
+}
+
+.form-groupe1:active label:before {
+    opacity: .1;
+}
+
+.form-groupe1 label:active {
+    opacity: .1;
+}
+
+.prop {
+    padding-bottom: 30px;
+}
+
+.form-groupe2 {
+    padding-bottom: 20px;
+}
+
+.form-groupe2 label {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-groupe2 label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    border: 3px solid #b8b8b8;
+    border-radius: 4px;
+    top: -3px;
+    left: 0;
+    position: absolute;
+}
+
+.form-groupe2 input:checked + label:before {
+    content: "\2714";
+    color: #b8b8b8;
+    text-align: center;
+    font-size: 30px;
+    line-height: 10px;
+}
+
+.form-groupe2:hover input:checked + label:before {
+    color: #4d4d4d;
+}
+
+.form-groupe2:hover label:before {
+    border: 3px solid #4d4d4d;
+}
+
+.form-groupe2:active input:checked + label:before {
+    opacity: .3;
+}
+
+.form-groupe2:active label:before {
+    opacity: .1;
+}
+
+.form-groupe2 label:active {
+    opacity: .1;
+}
+
+.show {
+    border: none;
+    border-radius: 2px;
+    background-color: #eeeeee;
+    padding: 20px 90px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.show:hover {
+    background-color: #dfdfdf;
+}
+
+.show:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px #bfbfbf;
+    color: #a9a9a9;
+}
+
+.portfolio {
+    margin-left: 260px;
+    width: 100%;
+    padding-bottom: 60px;
+}
