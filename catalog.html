@@ -37,8 +37,16 @@
                 <aside class="filter">
                     <div class="cost">
                         <h3>стоимость:</h3>
-                        <div class="cost_change">
-
+                        <div class="cost_change--block">
+                            <div class="range-controls">
+                                <div class="scale"><div class="bar"></div></div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label for="min_price">от</label><input class="min-price" type="text" value="0" id="min_price">
+                               <label for="max_price">до</label><input class="max-price" type="text" value="15 000" id="max_price">
+                            </div>
                         </div>
                     </div>
                     <form name="filt" action="#">
@@ -86,11 +94,11 @@
                 <section class="portfolio">
                     <div class="sort">
                         <h3>сортировать:</h3>
-                        <a href="#">по цене</a>
-                        <a href="#">по типу</a>
-                        <a href="#">по названию</a>
-                        <p class="down"></p>
-                        <p class="up"></p>
+                        <button type="button" class="type">по цене</button>
+                        <button type="button" class="type">по типу</button>
+                        <button type="button" class="type">по названию</button>
+                        <button type="button" class="down"></button>
+                        <button type="button" class="up"></button>
                     </div>
                     <div class="tamplates">
                         <article>
@@ -178,10 +186,10 @@
                             </div>
                         </article>
                         <div class="pages">
-                            <a href="#" class="page">1</a>
-                            <a href="#" class="page">1</a>
-                            <a href="#" class="page">1</a>
-                            <a href="#" class="next_page">следующая</a>
+                            <button type="button" class="page">1</button>
+                            <button type="button" class="page">2</button>
+                            <button type="button" class="page">3</button>
+                            <button type="button" class="next_page">следующая</button>
                         </div>
                     </div>
                 </section>

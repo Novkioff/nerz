@@ -15,7 +15,7 @@ header h2 {
 }
 
 .filter {
-    width: 260px;
+    width: 240px;
     padding-bottom: 60px;
 }
 
@@ -26,12 +26,72 @@ header h2 {
     padding-bottom: 50px;
 }
 
-.cost_change {
-    width: 260px;
-    height: 132px;
-    background-color: #eeeeee;
-    border-radius: 2px;
-    margin-bottom: 60px;
+.cost_change--block {
+    margin-bottom: 45px;
+}
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.range-controls .scale{
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+.range-controls .bar{
+    width: 70%; /* При изменении % двигается ползунок */
+    height: 2px;
+    background: #00ca74;
+}
+.range-controls .toggle{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-sizing: content-box;
+}
+.range-controls .toggle:hover{
+    background: #d7dcde;
+}
+.range-controls .max-toggle{
+    left: 145px;
+}
+.price-controls input{
+    width: 80px;
+    padding: 7px 10px;
+    margin-left: 10px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #283136;
+    border-radius: 5px;
+}
+.price-controls{
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.min-price {
+    margin-right: 20px;
+}
+.max-price--absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .grid {
@@ -212,15 +272,43 @@ article:nth-child(even) {
     padding-right: 266px;
 }
 
-.sort a {
+.sort .type {
     font-size: 14px;
     font-weight: 400;
     color: #cacaca;
     padding-right: 25px;
     text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: #fff;
 }
 
-.sort p {
+.sort .type:hover {
+    color: #8d8d8d;
+}
+
+.sort .type:active {
+    color: #000;
+}
+
+.up {
+    background-position: -9px 0;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    opacity: .1;
+}
+
+.down {
+    background-position: 0 0;
     display: inline-block;
     vertical-align: top;
     width: 9px;
@@ -229,16 +317,18 @@ article:nth-child(even) {
     background-repeat: no-repeat;
     margin-right: 20px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    opacity: .1;
 }
 
-.up{
-    background-position: -9px 0;
-    margin-right: 0;
+.up:hover, .down:hover {
     opacity: .3;
 }
 
-.down {
-    background-position: 0 0;
+.up:active, .down:active {
+    opacity: 1;
 }
 
 .artic_header {
@@ -261,7 +351,7 @@ article:nth-child(even) {
 
 .templ {
     width: 356px;
-    height: 575px;
+    height: 574px;
     position: relative;
 }
 
@@ -300,7 +390,7 @@ article:nth-child(even) {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 360px;
+    width: 357px;
     height: 231px;
     background-color: #eeeeee;
     text-align: center;
@@ -344,3 +434,56 @@ article:nth-child(even) {
 .templ:hover > .art_hover {
     display: block;
 }
+
+article:hover > .artic_header {
+    background-color: #4d4d4d;
+    border-bottom-color: #4d4d4d;
+
+}
+
+article:hover {
+    box-shadow: 0 0 12px #cfcfcf;
+}
+
+.pages {
+    padding-top: 24px;
+}
+
+.page, .next_page {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background-color: #eeeeee;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.page {
+    width: 50px;
+    height: 50px;
+    margin-right: 11px;
+}
+
+.next_page {
+    width: 260px;
+    height: 50px;
+}
+
+.page:hover, .next_page:hover {
+    background-color: #dfdfdf;
+}
+
+.page:active, .next_page:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px #bfbfbf;
+    color: #a9a9a9;
+}
+
+.page--active {
+    background-color: #fff;
+    border: 3px solid #dbdbdb;
+}
+
+
