@@ -7,7 +7,7 @@ header h2 {
 }
 
 .nav_menu {
-    padding-bottom: 70px;
+    padding-bottom: 76px;
 }
 
 .filter {
@@ -15,7 +15,7 @@ header h2 {
 }
 
 .filter {
-    width: 240px;
+    width: 255px;
     padding-bottom: 60px;
 }
 
@@ -23,11 +23,12 @@ header h2 {
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
+    padding-top: 24px;
     padding-bottom: 50px;
 }
 
 .cost_change--block {
-    margin-bottom: 45px;
+    margin-bottom: 62px;
 }
 .range-controls {
     position: relative;
@@ -102,7 +103,7 @@ form h3 {
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .form-groupe1 input, .form-groupe2 input {
@@ -110,7 +111,7 @@ form h3 {
 }
 
 .form-groupe1 {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .form-groupe1 label {
@@ -163,11 +164,11 @@ form h3 {
 }
 
 .prop {
-    padding-bottom: 30px;
+    padding-bottom: 21px;
 }
 
 .form-groupe2 {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .form-groupe2 label {
@@ -227,6 +228,7 @@ form h3 {
     outline: none;
     font-size: 16px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .show:hover {
@@ -243,6 +245,10 @@ form h3 {
     padding-bottom: 60px;
     float: right;
     width: 760px;
+}
+
+.sort {
+    padding-top: 24px;
 }
 
 article {
@@ -321,6 +327,7 @@ article:nth-child(even) {
     outline: none;
     background-color: #fff;
     opacity: .1;
+    margin-left: 10px;
 }
 
 .up:hover, .down:hover {
@@ -469,6 +476,7 @@ article:hover {
 .next_page {
     width: 260px;
     height: 50px;
+    text-transform: uppercase;
 }
 
 .page:hover, .next_page:hover {

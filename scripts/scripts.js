@@ -73,7 +73,7 @@ window.addEventListener("keydown", function(e) {
     if (e.keyCode == 27 && modal.classList.contains("open_modal")) {
         modal.classList.remove("open_modal");
     }
-})
+});
 
 
 
