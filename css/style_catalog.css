@@ -59,8 +59,10 @@ header h2 {
     background: #ababab;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
-    box-sizing: content-box;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+        box-shadow: 0 2px 1px 0 #cfcfcf;
+    -webkit-box-sizing: content-box;
+        box-sizing: content-box;
 }
 .range-controls .toggle:hover{
     background: #d7dcde;
@@ -96,7 +98,7 @@ header h2 {
 }
 
 .grid {
-padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 form h3 {
@@ -237,7 +239,8 @@ form h3 {
 
 .show:active {
     background-color: #d5d5d5;
-    box-shadow: inset 0 3px #bfbfbf;
+    -webkit-box-shadow: inset 0 3px #bfbfbf;
+        box-shadow: inset 0 3px #bfbfbf;
     color: #a9a9a9;
 }
 
@@ -434,7 +437,8 @@ article:nth-child(even) {
 
 .art_hover a:active {
     background-color: #d7373b;
-    box-shadow: inset 0 3px #c13135;
+    -webkit-box-shadow: inset 0 3px #c13135;
+        box-shadow: inset 0 3px #c13135;
     color: #e38384;
 }
 
@@ -449,7 +453,8 @@ article:hover > .artic_header {
 }
 
 article:hover {
-    box-shadow: 0 0 12px #cfcfcf;
+    -webkit-box-shadow: 0 0 12px #cfcfcf;
+         box-shadow: 0 0 12px #cfcfcf;
 }
 
 .pages {
@@ -485,7 +490,8 @@ article:hover {
 
 .page:active, .next_page:active {
     background-color: #d5d5d5;
-    box-shadow: inset 0 3px #bfbfbf;
+    -webkit-box-shadow: inset 0 3px #bfbfbf;
+        box-shadow: inset 0 3px #bfbfbf;
     color: #a9a9a9;
 }
 
@@ -494,4 +500,8 @@ article:hover {
     border: 3px solid #dbdbdb;
 }
 
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .sort h3 {
+        padding-right: 255px;
+    }
+}
