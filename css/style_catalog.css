@@ -268,17 +268,17 @@ article:nth-child(even) {
     margin-right: 0;
 }
 
-.sort h3, .sort a {
-    display: inline-block;
-    vertical-align: top;
+.sort_buttons {
+    float: right;
+    width: 360px;
 }
 
 .sort h3 {
+    float: left;
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
     padding-bottom: 50px;
-    padding-right: 266px;
 }
 
 .sort .type {
@@ -363,44 +363,39 @@ article:nth-child(even) {
     width: 356px;
     height: 574px;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
-
 .templ--sedona {
     background-image: url("../img/sedona.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
 }
 
 .templ--pink {
     background-image: url("../img/pink.jpg");
-    background-repeat: no-repeat;
 }
 
 .templ--borod {
     background-image: url("../img/borod.jpg");
-    background-repeat: no-repeat;
 }
 
 .templ--mish {
     background-image: url("../img/mishka.jpg");
-    background-repeat: no-repeat;
 }
 
 .templ--a {
     background-image: url("../img/aplus.jpg");
-    background-repeat: no-repeat;
 }
 
 .templ--kvast {
     background-image: url("../img/kvast.jpg");
-    background-repeat: no-repeat;
 }
 
 .art_hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 357px;
+    width: 360px;
     height: 231px;
     background-color: #eeeeee;
     text-align: center;
@@ -498,10 +493,4 @@ article:hover {
 .page--active {
     background-color: #fff;
     border: 3px solid #dbdbdb;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .sort h3 {
-        padding-right: 255px;
-    }
 }
